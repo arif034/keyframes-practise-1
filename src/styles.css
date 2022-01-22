@@ -1,4 +1,21 @@
 .App {
+  position: relative;
   font-family: sans-serif;
   text-align: center;
+  width: 400px;
+  height: 400px;
+  background-color: rgba(0, 255, 255, 0.4);
+  animation: my-animation 5s linear;
+}
+
+@keyframes my-animation {
+  0% {
+    background-color: rgba(255, 0, 0, 0.4);
+  }
+  50% {
+    background-color: rgba(0, 255, 0, 0.4);
+  }
+  100% {
+    background-color: rgba(0, 0, 255, 0.4);
+  }
 }
