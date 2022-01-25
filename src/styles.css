@@ -1,35 +1,31 @@
 .App {
   font-family: sans-serif;
   text-align: center;
-  width: 400px;
-  height: 400px;
+  width: 500px;
+  height: 500px;
   background-color: rgba(0, 255, 255, 0.4);
   transform: translate(50px, 50px);
 }
 
-.a {
-  position: relative;
-  width: 80px;
-  height: 80px;
+/* .a {
+  position: absolute;
+  width: 100px;
+  height: 100px;
   background-color: rgba(255, 0, 0, 0.4);
   transform: translate(50px, 50px);
+  display: grid;
+  grid-template-columns: auto;
+  grid-template-rows: auto;
 }
 
-.b {
-  position: absolute;
+.a > div {
+  position: relative;
   width: 20px;
   height: 20px;
   background-color: rgba(0, 0, 255, 0.4);
-}
+} */
 
-.c {
-  position: relative;
-  width: 20px;
-  height: 20px;
-  background-color: rgba(0, 0, 255, 0.6);
-}
-
-@keyframes my-animation {
+/* @keyframes my-animation {
   0% {
     background-color: rgba(255, 0, 0, 0.4);
   }
@@ -39,4 +35,22 @@
   100% {
     background-color: rgba(0, 0, 255, 0.4);
   }
+} */
+
+.grid-container {
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  grid-template-rows: auto auto auto auto;
+  grid-gap: 10px;
+  background-color: rgba(0, 255, 0, 0.5);
+  padding: 10px;
+}
+
+.grid-container > div {
+  background-color: rgba(255, 0, 0, 0.6);
+  text-align: center;
+  padding: 20px 0;
+  font-size: 30px;
+  width: 10px;
+  height: 10px;
 }
